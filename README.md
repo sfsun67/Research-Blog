@@ -1,7 +1,9 @@
 # Research-Blog
 Some ideas and research.
 
+## DATA
 
+1. [LIMO: 用少量高质量推理链激发预训练模型的推理潜力，实现跨领域泛化的新范式](https://github.com/sfsun67/Research-Blog/blob/main/LIMO%20用少量高质量推理链激发预训练模型的推理潜力，实现跨领域泛化的新范式.md)
 
 
 
