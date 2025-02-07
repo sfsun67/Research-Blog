@@ -1,7 +1,7 @@
 # Research-Blog
 Some ideas and research.
 
-**My research focuses on Large Language Models (LLMs), Multimodal Models (VLMs), World Models, and High-Quality Data to push the boundaries of cognitive reasoning, scene understanding, and efficient AI learning.**
+My research focuses on **Large Language Models (LLMs)**, **Multimodal Models (eg. VLMs)**, **World Models**, and **High-Quality Data** to push the boundaries of cognitive reasoning, scene understanding, and efficient AI learning.
 - Smarter AI: Enhancing interpretability, alignment, and deep reasoning in LLMs
 - Comprehensive AI: Advancing multimodal fusion for text, image, and video understanding
 - Realistic AI: Developing world models to enable AI agents to simulate real-world scenarios
