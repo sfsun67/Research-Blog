@@ -7,6 +7,10 @@ My research focuses on **Large Language Models (LLMs)**, **Multimodal Models (eg
 - Realistic AI: Developing world models to enable AI agents to simulate real-world scenarios
 - Reliable AI: Improving data quality and augmentation strategies for better model performance
 
+## THEORY
+
+1. [Deepseek-R1 复现系列：RL 数理基础（一）](https://github.com/sfsun67/Research-Blog/blob/main/Deepseek-R1%20复现系列：RL%20数理基础（一）.md)
+
 ## DATA
 
 1. [LIMO: 用少量高质量推理链激发预训练模型的推理潜力，实现跨领域泛化的新范式](https://github.com/sfsun67/Research-Blog/blob/main/LIMO%20用少量高质量推理链激发预训练模型的推理潜力，实现跨领域泛化的新范式.md)
