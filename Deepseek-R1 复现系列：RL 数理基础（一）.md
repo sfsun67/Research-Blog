@@ -137,11 +137,13 @@ $A(s_9) = \{ a_5 \}, \quad p(s_9 | s_9, a_i) = 1 \quad \text{for all } i = 1, \d
 
 **Policy** 描述了智能体在每个状态下应该采取的动作。智能体按照策略执行时，可以从初始状态开始生成一个轨迹，例如：$s_0 \rightarrow s_1 \rightarrow \dots \rightarrow s_n$.
 
-## **形式化定义：**
+**形式化定义：**
 
 - 策略 $\pi(a | s)$ 是一个条件概率分布函数，定义在每个状态上。例如，在状态 $s_1$ 下，策略 $\pi$ 可以表示为：
 
-  $$ \pi(a_1 | s_1) = 0, \quad \pi(a_2 | s_1) = 1, \quad \pi(a_3 | s_1) = 0, \quad \pi(a_4 | s_1) = 0, \quad \pi(a_5 | s_1) = 0 $$
+$$
+\pi(a_1 | s_1) = 0, \quad \pi(a_2 | s_1) = 1, \quad \pi(a_3 | s_1) = 0, \quad \pi(a_4 | s_1) = 0, \quad \pi(a_5 | s_1) = 0
+$$
 
 这表示，在状态 $s_1$ 下，采取动作 $a_2$ 的概率为 $1$，而采取其他动作的概率为 $0$。
 
@@ -151,7 +153,9 @@ $A(s_9) = \{ a_5 \}, \quad p(s_9 | s_9, a_i) = 1 \quad \text{for all } i = 1, \d
 
 - 对于随机策略，条件概率分布可能是：
 
-  $$ \pi(a_1 | s_1) = 0.5, \quad \pi(a_3 | s_1) = 0.5 $$
+$$
+\pi(a_1 | s_1) = 0.5, \quad \pi(a_3 | s_1) = 0.5
+$$
 
 这表示，在状态 $s_1$ 下，智能体有 50% 的概率向右移动（采取 $a_2$），有 50% 的概率向下移动（采取 $a_3$）。 
 
@@ -195,21 +199,29 @@ $A(s_9) = \{ a_5 \}, \quad p(s_9 | s_9, a_i) = 1 \quad \text{for all } i = 1, \d
 ### **2. Model（模型）:**
 - **State transition probability（状态转移概率）**: 在状态 $s$ 下，采取动作 $a$ 时，转移到状态 $s'$ 的概率为 $p(s' | s, a)$，满足条件：
   
-  $$ \sum_{s' \in S} p(s' | s, a) = 1 \quad \text{对于任何} (s, a) $$
+$$
+\sum_{s' \in S} p(s' | s, a) = 1 \quad \text{对于任何} (s, a)
+$$
 
 - **Reward probability（奖励概率）**: 在状态 $s$ 下，采取动作 $a$ 时，获得奖励 $r$ 的概率为 $p(r | s, a)$，满足条件：
 
-  $$ \sum_{r \in R(s,a)} p(r | s, a) = 1 \quad \text{对于任何} (s, a) $$
+$$
+\sum_{r \in R(s,a)} p(r | s, a) = 1 \quad \text{对于任何} (s, a)
+$$
 
 ### **3. Policy（策略）:**
 - **Policy** 是在每个状态下选择动作的概率分布，记为 $\pi(a | s)$，满足条件：
 
-  $$ \sum_{a \in A(s)} \pi(a | s) = 1 \quad \text{对于任何} \ s \in S $$
+$$
+\sum_{a \in A(s)} \pi(a | s) = 1 \quad \text{对于任何} \ s \in S
+$$
 
 ### **4. Markov Property（马尔可夫性质）:**
 - 马尔可夫性质指的是随机过程的“无记忆”特性。数学上，它表示：
 
-  $$ p(s_{t+1} | s_t, a_t, s_{t-1}, a_{t-1}, \dots, s_0, a_0) = p(s_{t+1} | s_t, a_t) $$
+$$
+p(s_{t+1} | s_t, a_t, s_{t-1}, a_{t-1}, \dots, s_0, a_0) = p(s_{t+1} | s_t, a_t)
+$$
 
   其中 $t$ 表示当前时间步，$t+1$ 表示下一个时间步。这表明，下一个状态或奖励仅依赖于当前的状态和动作，而与过去的状态和动作无关。 
 
